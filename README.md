@@ -1,348 +1,510 @@
 <div align="center">
 
-# ⛓️ NEXCHAIN
+# ⚡ NEXCHAIN
 
-### ⚡ AUTONOMOUS BLOCKCHAIN PROTOCOL
+### Autonomous Blockchain Protocol
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=180&color=0:050816,50:111827,100:312e81&text=NEXCHAIN&fontColor=ffffff&fontSize=58&fontAlignY=40&desc=Autonomous%20Blockchain%20Protocol&descAlignY=63&descSize=18&animation=fadeIn" width="100%"/>
+<p>
+  <strong>A blockchain protocol engineered from the ground up for transparent state, deterministic execution, persistent storage, consensus, networking, and real-time protocol visualization.</strong>
+</p>
 
-<br/>
+<br>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=2800&pause=900&color=8B5CF6&center=true&vCenter=true&width=850&lines=Consensus+%E2%80%A2+P2P+Networking+%E2%80%A2+Smart+Contracts;Cryptography+%E2%80%A2+Persistent+State+%E2%80%A2+Transaction+Engine;Built+from+Scratch+%E2%80%A2+Modular+%E2%80%A2+Extensible+%E2%80%A2+Protocol-First" />
+<img src="https://img.shields.io/badge/NEXCHAIN-v1.0.0-7C3AED?style=for-the-badge&logo=bitcoin&logoColor=white" />
+<img src="https://img.shields.io/badge/Protocol-Autonomous-06B6D4?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Language-Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+<img src="https://img.shields.io/badge/Frontend-React-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
+<img src="https://img.shields.io/badge/Build-Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
+<img src="https://img.shields.io/badge/License-MIT-22C55E?style=for-the-badge" />
 
-<br/><br/>
+<br><br>
 
-[![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![React](https://img.shields.io/badge/React-UI-61DAFB?style=for-the-badge&logo=react&logoColor=111827)](https://react.dev/)
-[![Vite](https://img.shields.io/badge/Vite-Frontend-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vite.dev/)
-[![SQLite](https://img.shields.io/badge/SQLite-Persistence-003B57?style=for-the-badge&logo=sqlite&logoColor=white)](https://sqlite.org/)
-[![Git](https://img.shields.io/badge/Git-Version_Control-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/)
-[![License](https://img.shields.io/badge/License-MIT-22C55E?style=for-the-badge)](LICENSE)
-
-<br/>
-
-### `PROTOCOL STATUS`
-
-🟢 **CORE READY** &nbsp;·&nbsp;
-🟢 **CONSENSUS READY** &nbsp;·&nbsp;
-🟢 **STATE READY** &nbsp;·&nbsp;
-🟢 **STORAGE READY** &nbsp;·&nbsp;
-🟢 **API READY** &nbsp;·&nbsp;
-🟢 **FRONTEND READY**
-
-<br/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F172A,50:312E81,100:06B6D4&height=180&section=header&text=NEXCHAIN&fontSize=55&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Autonomous%20Blockchain%20Protocol&descAlignY=58&descSize=18" width="100%" />
 
 </div>
 
 ---
 
-<div align="center">
+## ◈ What is NEXCHAIN?
 
-## ◈ THE NETWORK LAYER BETWEEN IDEA & EXECUTION ◈
+**NEXCHAIN** is an independently engineered blockchain protocol designed around a modular architecture rather than a single monolithic application.
 
-**NEXCHAIN** is a modular blockchain protocol engineered from the ground up around
-**consensus, cryptography, transactions, persistent state, networking, execution,
-and observability**.
+It combines:
 
-</div>
+- ⛓️ Blockchain construction
+- 🧠 Consensus execution
+- 🔐 Cryptographic transaction handling
+- 🌳 Merkle/state verification
+- 💾 Persistent blockchain storage
+- 💾 Persistent state storage
+- 🌐 Network and synchronization components
+- ⚙️ Smart-contract execution foundations
+- 🚀 Protocol runtime orchestration
+- 🖥️ Real-time web visualization
+- 🔎 Blockchain explorer capabilities
+- 🧪 Integrated integrity testing
 
-<br/>
-
----
-
-# ✦ SYSTEM OVERVIEW
+The project is structured so that the protocol itself remains independent from the visual frontend.
 
 ```text
                          ┌───────────────────────────┐
-                         │       NEXCHAIN UI         │
-                         │      React + Vite         │
+                         │       NEXCHAIN WEB        │
+                         │     React + Vite UI       │
                          └─────────────┬─────────────┘
                                        │
                                   HTTP / JSON
                                        │
                          ┌─────────────▼─────────────┐
-                         │        API GATEWAY         │
-                         │       Python Server        │
+                         │        NEXCHAIN API       │
+                         │     Protocol Gateway      │
                          └─────────────┬─────────────┘
                                        │
                          ┌─────────────▼─────────────┐
-                         │      NEXCHAIN RUNTIME      │
-                         │     Protocol Coordinator   │
+                         │     NEXCHAIN RUNTIME      │
+                         │  Protocol Orchestration   │
                          └─────────────┬─────────────┘
                                        │
-          ┌────────────────────────────┼────────────────────────────┐
-          │                            │                            │
-          ▼                            ▼                            ▼
- ┌─────────────────┐         ┌─────────────────┐          ┌─────────────────┐
- │    CONSENSUS    │         │     STATE       │          │    MEMPOOL      │
- │   Validation    │         │  Account State  │          │  Transactions   │
- └────────┬────────┘         └────────┬────────┘          └────────┬────────┘
-          │                           │                            │
-          └───────────────────────────┼────────────────────────────┘
-                                      │
-                         ┌────────────▼────────────┐
-                         │     BLOCKCHAIN CORE     │
-                         │ Blocks + Transactions  │
-                         └────────────┬────────────┘
-                                      │
-                         ┌────────────▼────────────┐
-                         │      PERSISTENCE        │
-                         │   SQLite State Layer    │
-                         └─────────────────────────┘
-⚡ CORE CAPABILITIES
-<table> <tr> <td width="50%">
-⛓️ Blockchain Core
-Block construction
-Chain validation
-Block hashing
-Previous-hash linking
-Merkle-root support
-Chain integrity verification
-</td> <td width="50%">
-🧠 Consensus
-Validator identity
-Block validation
-Consensus execution
-Integrity verification
-Runtime consensus integration
-</td> </tr> <tr> <td>
-🔐 Cryptography
-Transaction signing
-Public-key handling
-Hash-based integrity
-Cryptographic verification
-</td> <td>
-💾 Persistent State
-Account state
-State roots
-SQLite persistence
-Snapshot support
-State verification
-Recovery-oriented storage
-</td> </tr> <tr> <td>
-📦 Transaction Engine
-Transaction structure
-Nonce handling
-Fees
-Sender / recipient flow
-Mempool management
-Validation pipeline
-</td> <td>
-🌐 Networking
-Network abstraction
-Peer-oriented architecture
-Protocol communication layer
-API exposure
-Future multi-node expansion
-</td> </tr> <tr> <td>
-🧩 Smart Contracts
-Virtual-machine layer
-Contract execution architecture
-Extensible execution model
-Protocol-level integration
-</td> <td>
-📊 Observability
-Runtime status
-Chain height
-State root
-Mempool state
-Health endpoint
-Integrated self-tests
-</td> </tr> </table>
-◈ ARCHITECTURE
-NEXCHAIN
+              ┌────────────────────────┼────────────────────────┐
+              │                        │                        │
+       ┌──────▼──────┐         ┌───────▼───────┐        ┌──────▼──────┐
+       │ Blockchain  │         │    State      │        │  Consensus  │
+       │    Core     │         │    Engine     │        │   Engine    │
+       └──────┬──────┘         └───────┬───────┘        └──────┬──────┘
+              │                        │                        │
+              └────────────────────────┼────────────────────────┘
+                                       │
+                         ┌─────────────▼─────────────┐
+                         │        STORAGE LAYER      │
+                         │ SQLite + Recovery + Root  │
+                         └───────────────────────────┘
+```
+
+---
+
+# ✦ Core Architecture
+
+NEXCHAIN is divided into independent protocol domains.
+
+### `core/`
+
+The heart of the protocol.
+
+Responsible for:
+
+- Blocks
+- Blockchain
+- Transactions
+- State
+- Mempool
+- Merkle structures
+- Block production
+- Contract state
+- Contract VM
+- Runtime orchestration
+- Recovery
+- Protocol core
+
+---
+
+### `consensus/`
+
+Consensus execution layer.
+
+```text
+Consensus
+   │
+   ├── Validator logic
+   ├── Block validation
+   ├── Chain validation
+   └── Consensus execution
+```
+
+---
+
+### `crypto/`
+
+Cryptographic primitives and protocol cryptography.
+
+Used for secure transaction and protocol operations.
+
+---
+
+### `storage/`
+
+Persistent protocol state.
+
+```text
+                    STORAGE
+                       │
+            ┌──────────┴──────────┐
+            │                     │
+      Blockchain Store       State Store
+            │                     │
+       Blocks / TXs          Accounts / Root
+            │                     │
+            └──────────┬──────────┘
+                       │
+                    SQLite
+```
+
+Features include:
+
+- Persistent blocks
+- Persistent transactions
+- Persistent accounts
+- State roots
+- Supply tracking
+- Integrity validation
+- Snapshots
+- Atomic replacement
+- Restart recovery
+
+---
+
+### `network/`
+
+Networking foundations for protocol nodes.
+
+Includes:
+
+- Node management
+- Transport
+- Synchronization
+- Network state
+
+---
+
+### `vm/`
+
+Virtual-machine foundation for executable blockchain logic and future smart-contract expansion.
+
+---
+
+### `api/`
+
+Protocol-facing HTTP interface.
+
+The frontend communicates with NEXCHAIN through this layer rather than directly manipulating internal blockchain objects.
+
+---
+
+### `cli/`
+
+Command-line protocol interaction foundation.
+
+---
+
+# ⚡ Protocol Flow
+
+```text
+                  TRANSACTION
+                       │
+                       ▼
+                 ┌───────────┐
+                 │ Validation│
+                 └─────┬─────┘
+                       │
+                       ▼
+                  ┌─────────┐
+                  │ Mempool │
+                  └────┬────┘
+                       │
+                       ▼
+               ┌───────────────┐
+               │ Block Producer│
+               └───────┬───────┘
+                       │
+                       ▼
+                 ┌──────────┐
+                 │  Block   │
+                 └────┬─────┘
+                      │
+          ┌───────────┼───────────┐
+          │           │           │
+          ▼           ▼           ▼
+      Consensus     State      Merkle
+          │           │           │
+          └───────────┼───────────┘
+                      │
+                      ▼
+                Persistent DB
+                      │
+                      ▼
+                 State Root
+                      │
+                      ▼
+                 API / Explorer
+```
+
+---
+
+# ◇ State Integrity
+
+NEXCHAIN maintains a cryptographically verifiable state representation.
+
+The state layer tracks:
+
+- Account addresses
+- Balances
+- Nonces
+- Total supply
+- State root
+
+Every persisted state can be reconstructed and verified after restart.
+
+```text
+Accounts
+   │
+   ▼
+Deterministic State Representation
+   │
+   ▼
+State Root
+   │
+   ├───────────────┐
+   ▼               ▼
+Persisted Root   Recomputed Root
+   │               │
+   └───────┬───────┘
+           ▼
+       Verification
+```
+
+A mismatch indicates that the persisted state does not correspond to the expected state representation.
+
+---
+
+# ⛓️ Persistent Blockchain
+
+NEXCHAIN uses persistent SQLite storage for blockchain data.
+
+The blockchain store maintains:
+
+```text
+Blocks
+├── height
+├── version
+├── previous hash
+├── timestamp
+├── validator
+├── nonce
+├── difficulty
+├── merkle root
+├── block hash
+└── state root
+```
+
+Transactions are persisted separately and linked to their corresponding block height.
+
+---
+
+# 💾 Persistent State
+
+The persistent state store maintains:
+
+```text
+metadata
+├── state_root
+├── total_supply
+└── schema_version
+
+accounts
+├── address
+├── balance
+└── nonce
+```
+
+The storage system supports:
+
+- Save
+- Load
+- Verify
+- Snapshot
+- Replace
+- Recovery
+- Statistics
+- Corruption detection
+
+---
+
+# 🛡️ Integrity Model
+
+NEXCHAIN does not simply save data and assume that it is correct.
+
+The storage layer validates:
+
+```text
+                    STATE
+                      │
+                      ▼
+             ┌────────────────┐
+             │ Account Checks  │
+             └───────┬────────┘
+                     │
+                     ▼
+             ┌────────────────┐
+             │ Supply Checks  │
+             └───────┬────────┘
+                     │
+                     ▼
+             ┌────────────────┐
+             │ State Root     │
+             │ Calculation    │
+             └───────┬────────┘
+                     │
+                     ▼
+             ┌────────────────┐
+             │ Persisted Root  │
+             │ Comparison      │
+             └───────┬────────┘
+                     │
+                     ▼
+                  VERIFIED
+```
+
+---
+
+# 🌐 NEXCHAIN Web Interface
+
+The frontend provides a real-time protocol visualization layer.
+
+Built with:
+
+- React
+- Vite
+- Modern CSS
+- Responsive layouts
+- Animated protocol components
+- API-driven state
+- Explorer views
+
+The interface is designed around the concept of a live blockchain command center.
+
+### Frontend capabilities
+
+```text
+┌─────────────────────────────────────────────┐
+│              NEXCHAIN PROTOCOL              │
+├─────────────────────────────────────────────┤
+│                                             │
+│   NETWORK       BLOCK HEIGHT      STATE     │
+│   ONLINE             0             ROOT     │
+│                                             │
+├─────────────────────────────────────────────┤
+│                                             │
+│             BLOCKCHAIN EXPLORER             │
+│                                             │
+│   BLOCKS      TRANSACTIONS      NETWORK     │
+│                                             │
+├─────────────────────────────────────────────┤
+│                                             │
+│              LIVE PROTOCOL STATUS           │
+│                                             │
+└─────────────────────────────────────────────┘
+```
+
+The frontend communicates with the backend through HTTP API endpoints.
+
+---
+
+# 🧩 Project Structure
+
+```text
+NEXCHAIN/
 │
 ├── api/
-│   └── HTTP API + protocol endpoints
+│   └── ...
 │
 ├── cli/
-│   └── Command-line interaction layer
+│   └── ...
 │
 ├── consensus/
-│   └── Consensus and validation logic
+│   ├── __init__.py
+│   └── engine.py
 │
 ├── core/
-│   ├── Runtime
-│   ├── Blockchain
-│   ├── Blocks
-│   ├── Transactions
-│   ├── Mempool
-│   └── Block production
+│   ├── block.py
+│   ├── block_producer.py
+│   ├── blockchain.py
+│   ├── consensus_chain.py
+│   ├── contract_state.py
+│   ├── contract_vm.py
+│   ├── mempool.py
+│   ├── merkle.py
+│   ├── protocol_core.py
+│   ├── recovery.py
+│   ├── runtime.py
+│   ├── state.py
+│   ├── state_block.py
+│   └── transaction.py
 │
 ├── crypto/
-│   └── Cryptographic primitives
+│   └── crypto_engine.py
 │
 ├── data/
-│   └── Runtime blockchain/state databases
+│   └── ...
 │
 ├── network/
-│   └── P2P/networking abstractions
+│   ├── node.py
+│   ├── sync.py
+│   └── transport.py
 │
 ├── storage/
-│   ├── Blockchain persistence
-│   └── State persistence
+│   ├── blockchain_store.py
+│   ├── database.py
+│   └── state_store.py
 │
 ├── vm/
-│   └── Smart-contract execution layer
+│   └── ...
 │
 ├── frontend/
-│   ├── React
-│   ├── Vite
-│   ├── Protocol dashboard
-│   └── API integration
+│   ├── src/
+│   ├── public/
+│   ├── package.json
+│   ├── vite.config.*
+│   └── ...
 │
 ├── config.py
-├── main.py
 ├── fix_db.py
-└── requirements.txt
-🔥 PROTOCOL FLOW
-                 TRANSACTION
-                      │
-                      ▼
-              ┌───────────────┐
-              │   VALIDATION  │
-              └───────┬───────┘
-                      │
-                      ▼
-              ┌───────────────┐
-              │    MEMPOOL    │
-              └───────┬───────┘
-                      │
-                      ▼
-              ┌───────────────┐
-              │    CONSENSUS  │
-              └───────┬───────┘
-                      │
-                      ▼
-              ┌───────────────┐
-              │ BLOCK CREATION│
-              └───────┬───────┘
-                      │
-                      ▼
-              ┌───────────────┐
-              │ STATE UPDATE  │
-              └───────┬───────┘
-                      │
-                      ▼
-              ┌───────────────┐
-              │   PERSISTENCE │
-              └───────┬───────┘
-                      │
-                      ▼
-                 NEW STATE
-🧬 DATA INTEGRITY
+├── main.py
+├── requirements.txt
+└── README.md
+```
 
-Every block participates in a cryptographically linked chain:
+---
 
-┌──────────────────────┐
-│ BLOCK #0000          │
-│                      │
-│ Previous: GENESIS    │
-│ Hash: A91F...        │
-└──────────┬───────────┘
-           │
-           ▼
-┌──────────────────────┐
-│ BLOCK #0001          │
-│                      │
-│ Previous: A91F...    │
-│ Hash: 73BD...        │
-└──────────┬───────────┘
-           │
-           ▼
-┌──────────────────────┐
-│ BLOCK #0002          │
-│                      │
-│ Previous: 73BD...    │
-│ Hash: C42A...        │
-└──────────┬───────────┘
-           │
-           ▼
-        CONTINUITY
+# 🚀 Run NEXCHAIN
 
-A change to historical block data propagates through the integrity chain,
-making unauthorized modification detectable.
+## 1. Clone
 
-🧠 STATE ENGINE
-
-NEXCHAIN separates blockchain history from current protocol state.
-
-                 BLOCKCHAIN
-                     │
-              Historical Data
-                     │
-                     ▼
-              ┌─────────────┐
-              │ State Engine │
-              └──────┬──────┘
-                     │
-          ┌──────────┼──────────┐
-          ▼          ▼          ▼
-       Accounts    Nonces      Root
-          │          │          │
-          └──────────┼──────────┘
-                     ▼
-              Persistent State
-
-The state layer supports:
-
-account persistence
-balance tracking
-state roots
-snapshots
-verification
-replacement
-database recovery
-integrity testing
-🌐 API
-
-NEXCHAIN exposes a local HTTP API for the frontend and external clients.
-
-Health
-GET /api/v1/health
-Protocol Status
-GET /api/v1/status
-Blocks
-GET /api/v1/blocks
-Integrated Self-Test
-POST /api/v1/self-test
-Local API
-http://127.0.0.1:8080
-🖥️ FRONTEND
-
-The NEXCHAIN interface is built using:
-
-React
-   │
-   ├── Protocol Dashboard
-   ├── Runtime Status
-   ├── Chain Information
-   ├── Network State
-   ├── API Connectivity
-   └── Live Protocol Data
-          │
-          ▼
-      NEXCHAIN API
-
-Development server:
-
-http://127.0.0.1:5173
-🚀 QUICK START
-1. Clone
+```bash
 git clone https://github.com/Ammarakram-dev/NEXCHAIN-Autonomous-Blockchain-Protocol.git
 cd NEXCHAIN-Autonomous-Blockchain-Protocol
-2. Install Python Dependencies
-py -m pip install -r requirements.txt
-3. Verify the Protocol
+```
+
+---
+
+## 2. Run the protocol
+
+```bash
 py main.py
+```
 
-Expected result:
+A successful runtime should display:
 
+```text
 ======================================================================
 NEXCHAIN — INTEGRATED PROTOCOL
 ======================================================================
 
 Runtime initialized successfully.
+Network : NEXCHAIN
+Token   : NEX
+Height  : 0
+Validator: ...
+State Root: ...
+
+Running integrated integrity test...
 
 [PASS] blockchain
 [PASS] state
@@ -355,293 +517,425 @@ Runtime initialized successfully.
 ======================================================================
 NEXCHAIN INTEGRATED RUNTIME: READY
 ======================================================================
-🌐 START THE API
+```
 
-Open Terminal 1:
+---
 
-cd /d/NEXCHAIN
-py -m api.server
+# 🧪 Protocol Testing
 
-API:
-
-http://127.0.0.1:8080
-🎛️ START THE FRONTEND
-
-Open Terminal 2:
-
-cd /d/NEXCHAIN/frontend
-npm install
-npm run dev
-
-Open:
-
-http://127.0.0.1:5173
-🏗️ PRODUCTION BUILD
-cd /d/NEXCHAIN/frontend
-npm run build
-
-The generated production bundle is placed inside:
-
-frontend/dist/
-🔎 API VERIFICATION
-Health
-cd /d/NEXCHAIN
-
-py -c "import urllib.request; print(urllib.request.urlopen('http://127.0.0.1:8080/api/v1/health').read().decode())"
-Status
-py -c "import urllib.request; print(urllib.request.urlopen('http://127.0.0.1:8080/api/v1/status').read().decode())"
-Blocks
-py -c "import urllib.request; print(urllib.request.urlopen('http://127.0.0.1:8080/api/v1/blocks').read().decode())"
-🧪 INTEGRITY VERIFICATION
-
-NEXCHAIN contains integrated verification across the major protocol layers.
-
-             ┌─────────────────────┐
-             │   INTEGRITY TEST    │
-             └──────────┬──────────┘
-                        │
-        ┌───────────────┼────────────────┐
-        ▼               ▼                ▼
-   Blockchain         State          Consensus
-        │               │                │
-        └───────────────┼────────────────┘
-                        ▼
-                  Storage Layer
-                        │
-                        ▼
-                   Protocol
-                        │
-                        ▼
-                    OVERALL
+NEXCHAIN includes integrated integrity testing across the major protocol layers.
 
 Run:
 
+```bash
 py main.py
+```
 
-The runtime verifies:
+The runtime performs integrated verification of:
 
-blockchain
-state
-consensus
-blockchain storage
-state storage
-protocol integration
-overall runtime integrity
-💾 PERSISTENCE
+```text
+✓ Blockchain
+✓ State
+✓ Consensus
+✓ Blockchain Storage
+✓ State Storage
+✓ Protocol
+✓ Overall Runtime
+```
 
-NEXCHAIN uses SQLite-backed persistence for local protocol state.
+---
 
-data/
-│
-├── blockchain state
-│
-└── protocol state
+# 💾 Storage Tests
 
-Runtime databases are intentionally excluded from version control.
+### Blockchain storage
 
-This keeps the source repository clean while allowing each runtime environment
-to maintain its own persistent state.
+```bash
+py -m storage.blockchain_store
+```
 
-🔐 SECURITY MODEL
+### State storage
 
-NEXCHAIN is designed around layered integrity:
+```bash
+py -m storage.state_store
+```
 
-TRANSACTION
-     │
-     ▼
-SIGNATURE
-     │
-     ▼
-VALIDATION
-     │
-     ▼
-MEMPOOL
-     │
-     ▼
-CONSENSUS
-     │
-     ▼
-BLOCK HASH
-     │
-     ▼
-STATE ROOT
-     │
-     ▼
-PERSISTENT STORAGE
+Successful state persistence verifies:
 
-The architecture keeps cryptography, validation, consensus, state,
-and persistence as distinct protocol layers.
+```text
+✓ Database initialization
+✓ State creation
+✓ State persistence
+✓ State recovery
+✓ Root verification
+✓ State modification
+✓ Snapshot creation
+✓ Atomic replacement
+✓ Final integrity verification
+```
 
-🧩 DESIGN PRINCIPLES
-Principle	Implementation
-Modular	Independent protocol packages
-Deterministic	Structured validation pipeline
-Persistent	SQLite-backed state
-Verifiable	Integrated integrity tests
-Extensible	VM, networking and API layers
-Observable	Runtime and health endpoints
-Developer-Friendly	Python + React architecture
-Protocol-First	Core logic independent from UI
-🛠️ TECHNOLOGY STACK
+---
+
+# 🖥️ Frontend Development
+
+Open a second terminal:
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Vite will provide a local development address similar to:
+
+```text
+http://127.0.0.1:5173/
+```
+
+---
+
+# 🔌 Backend + Frontend
+
+NEXCHAIN is designed as a two-layer application:
+
+```text
+                    USER
+                     │
+                     ▼
+              ┌─────────────┐
+              │   FRONTEND  │
+              │ React / Vite│
+              └──────┬──────┘
+                     │
+                  HTTP API
+                     │
+                     ▼
+              ┌─────────────┐
+              │   NEXCHAIN  │
+              │     API     │
+              └──────┬──────┘
+                     │
+                     ▼
+              ┌─────────────┐
+              │   RUNTIME   │
+              └──────┬──────┘
+                     │
+          ┌──────────┼──────────┐
+          ▼          ▼          ▼
+       BLOCKS      STATE     CONSENSUS
+          │          │          │
+          └──────────┼──────────┘
+                     ▼
+                 STORAGE
+```
+
+The frontend should be started alongside the API/backend service.
+
+---
+
+# 📡 API Layer
+
+The protocol exposes API endpoints for frontend interaction.
+
+Typical resources include:
+
+```text
+/api/v1/health
+/api/v1/status
+/api/v1/blocks
+```
+
+The API layer provides the bridge between the internal protocol runtime and external applications.
+
+This architecture allows future clients to be built without modifying the blockchain core.
+
+---
+
+# 🔭 Explorer Architecture
+
+The web interface can consume protocol information such as:
+
+```text
+Network Status
+       │
+       ├── Chain Height
+       ├── Latest Block
+       ├── Latest Hash
+       ├── State Root
+       ├── Validator
+       ├── Mempool
+       └── Network Health
+```
+
+This creates a foundation for a public blockchain explorer.
+
+---
+
+# 🧠 Design Philosophy
+
+NEXCHAIN is built around several principles:
+
+### Determinism
+
+Protocol state should be reproducible from valid inputs.
+
+### Modularity
+
+Core components remain separated so that individual systems can evolve independently.
+
+### Verifiability
+
+Persisted state should be independently validated.
+
+### Recoverability
+
+Restarting the node should not destroy protocol state.
+
+### Transparency
+
+Protocol information should be observable through APIs and the web interface.
+
+### Extensibility
+
+The architecture leaves room for:
+
+- Additional validators
+- More advanced networking
+- Smart contracts
+- Wallet integration
+- Token transfers
+- Multi-node deployment
+- Peer discovery
+- Testnet environments
+- Mainnet infrastructure
+
+---
+
+# ⚙️ Technology Stack
+
+| Layer | Technology |
+|---|---|
+| Protocol | Python |
+| Blockchain | Custom implementation |
+| Consensus | Custom engine |
+| Cryptography | Python cryptographic layer |
+| Persistence | SQLite |
+| API | Python HTTP/API layer |
+| Frontend | React |
+| Build System | Vite |
+| Data Format | JSON / SQLite |
+| Version Control | Git |
+| Repository | GitHub |
+
+---
+
+# 📈 Development Roadmap
+
+```text
+                 NEXCHAIN EVOLUTION
+                         │
+                         ▼
+              ┌────────────────────┐
+              │   Protocol Core    │
+              │        ✓           │
+              └─────────┬──────────┘
+                        │
+                        ▼
+              ┌────────────────────┐
+              │ Persistent Storage │
+              │        ✓           │
+              └─────────┬──────────┘
+                        │
+                        ▼
+              ┌────────────────────┐
+              │ Runtime Integrity  │
+              │        ✓           │
+              └─────────┬──────────┘
+                        │
+                        ▼
+              ┌────────────────────┐
+              │ Web Interface      │
+              │        ✓           │
+              └─────────┬──────────┘
+                        │
+                        ▼
+              ┌────────────────────┐
+              │ Multi-Node Network │
+              │        →           │
+              └─────────┬──────────┘
+                        │
+                        ▼
+              ┌────────────────────┐
+              │ Wallet Ecosystem   │
+              │        →           │
+              └─────────┬──────────┘
+                        │
+                        ▼
+              ┌────────────────────┐
+              │ Public Testnet     │
+              │        →           │
+              └─────────┬──────────┘
+                        │
+                        ▼
+              ┌────────────────────┐
+              │ Production Network │
+              │        →           │
+              └────────────────────┘
+```
+
+---
+
+# 🔐 Security Direction
+
+Future security development can include:
+
+- Stronger transaction signature verification
+- Key management
+- Replay protection
+- Peer authentication
+- Rate limiting
+- API authentication
+- Network-level protections
+- Contract execution isolation
+- Formal protocol testing
+- Fuzz testing
+- Adversarial consensus testing
+
+---
+
+# 🌍 Public Usage Vision
+
+NEXCHAIN is structured so that users do not need to interact directly with internal Python modules.
+
+The intended public interaction model is:
+
+```text
+                 NEXCHAIN
+                     │
+       ┌─────────────┼─────────────┐
+       │             │             │
+       ▼             ▼             ▼
+     Wallet       Explorer        API
+       │             │             │
+       └─────────────┼─────────────┘
+                     │
+                     ▼
+               NEXCHAIN Nodes
+                     │
+                     ▼
+                 Blockchain
+```
+
+A future public deployment can expose the frontend through a domain while blockchain nodes operate independently behind the API/network layer.
+
+---
+
+# 🛠️ Development
+
+Create a virtual environment:
+
+```bash
+py -m venv .venv
+```
+
+Activate on Windows:
+
+```bash
+.venv\Scripts\activate
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the protocol:
+
+```bash
+py main.py
+```
+
+---
+
+# 🧹 Git Hygiene
+
+Generated Python cache files should not be committed.
+
+Recommended `.gitignore` entries:
+
+```gitignore
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+.env
+*.log
+dist/
+node_modules/
+```
+
+Runtime databases may be excluded from future production repository versions depending on deployment strategy.
+
+---
+
+# 📦 Production Build
+
+Build the frontend:
+
+```bash
+cd frontend
+npm run build
+```
+
+The production bundle is generated inside:
+
+```text
+frontend/dist/
+```
+
+---
+
+# 🔗 Repository
+
 <div align="center">
-Layer	Technology
-Protocol	Python
-API	Python HTTP server
-Frontend	React
-Build System	Vite
-Persistence	SQLite
-Cryptography	Python cryptographic layer
-Version Control	Git
-Runtime	Local / extensible node architecture
+
+### NEXCHAIN — Autonomous Blockchain Protocol
+
+<a href="https://github.com/Ammarakram-dev/NEXCHAIN-Autonomous-Blockchain-Protocol">
+  <img src="https://img.shields.io/badge/GitHub-Repository-111827?style=for-the-badge&logo=github&logoColor=white" />
+</a>
+
+<br><br>
+
+**A blockchain protocol built from the ground up.**
+
 </div>
-📡 NETWORK ARCHITECTURE
 
-The networking layer is designed for future multi-node protocol operation.
+---
 
-                   ┌──────────────┐
-                   │    NODE A    │
-                   └──────┬───────┘
-                          │
-                    P2P NETWORK
-                          │
-             ┌────────────┼────────────┐
-             ▼            ▼            ▼
-       ┌──────────┐ ┌──────────┐ ┌──────────┐
-       │  NODE B  │ │  NODE C  │ │  NODE D  │
-       └──────────┘ └──────────┘ └──────────┘
+# 📜 License
 
-The current repository provides the protocol foundation for extending the
-system toward multi-node deployment.
+This project is released under the **MIT License**.
 
-🤖 SMART CONTRACT LAYER
+See the repository license file for the applicable terms.
 
-NEXCHAIN includes a dedicated VM layer for programmable execution.
+---
 
-CONTRACT
-   │
-   ▼
-┌───────────────┐
-│ VM EXECUTION  │
-└───────┬───────┘
-        │
-        ▼
-   STATE CHANGE
-        │
-        ▼
-   PERSISTENCE
-
-The separation allows execution logic to evolve independently from the
-blockchain core.
-
-📦 PROJECT STRUCTURE
-NEXCHAIN/
-│
-├── api/
-├── cli/
-├── consensus/
-├── core/
-├── crypto/
-├── data/
-├── network/
-├── storage/
-├── vm/
-│
-├── frontend/
-│
-├── config.py
-├── fix_db.py
-├── main.py
-├── requirements.txt
-├── README.md
-└── .gitignore
-🧭 DEVELOPMENT ROADMAP
-CORE PROTOCOL
-     │
-     ├── Blockchain              ✓
-     ├── Transactions            ✓
-     ├── State Engine            ✓
-     ├── Consensus               ✓
-     ├── Persistence             ✓
-     ├── API                     ✓
-     └── Frontend                ✓
-     
-NEXT PROTOCOL EXPANSION
-     │
-     ├── Multi-node networking
-     ├── Peer discovery
-     ├── Production node hosting
-     ├── Testnet infrastructure
-     ├── Advanced smart contracts
-     ├── Wallet integration
-     └── Public network deployment
-⚠️ DEVELOPMENT / DEPLOYMENT NOTE
-
-The repository currently provides a functioning local protocol implementation
-with an integrated frontend and API.
-
-A truly public blockchain network additionally requires infrastructure such as:
-
-PUBLIC HTTPS API
-       │
-       ▼
-PUBLIC NODE
-       │
-       ▼
-MULTIPLE PEERS
-       │
-       ▼
-NETWORK CONSENSUS
-       │
-       ▼
-PERSISTENT PRODUCTION STORAGE
-
-Localhost development is intentionally separated from public deployment.
-
-🧪 DEVELOPMENT STATUS
 <div align="center">
-NEXCHAIN v1.1.0
-┌─────────────────────────────────────────────────────┐
-│                                                     │
-│   ███████╗███████╗██████╗ ███████╗ █████╗ ██╗     │
-│   ██╔════╝██╔════╝██╔══██╗██╔════╝██╔══██╗██║     │
-│   █████╗  █████╗  ██████╔╝█████╗  ███████║██║     │
-│   ██╔══╝  ██╔══╝  ██╔═══╝ ██╔══╝  ██╔══██║██║     │
-│   ██║     ███████╗██║     ███████╗██║  ██║███████╗│
-│   ╚═╝     ╚══════╝╚═╝     ╚══════╝╚═╝  ╚═╝╚══════╝│
-│                                                     │
-│             AUTONOMOUS BLOCKCHAIN                  │
-│                                                     │
-└─────────────────────────────────────────────────────┘
 
-CORE · CONSENSUS · STATE · STORAGE · API · UI
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:06B6D4,50:312E81,100:0F172A&height=140&section=footer&animation=fadeIn" width="100%" />
 
-</div>
-👨‍💻 AUTHOR
-<div align="center">
-Ammar Akram
+### ⚡ NEXCHAIN
 
-Software Engineering · AI/ML · Blockchain · Python
+**BUILD · VERIFY · CONNECT · EVOLVE**
 
-<br/>
+<br>
+
+`NEXCHAIN v1.0.0`
+
+<br>
+
+<sub>Autonomous Blockchain Protocol</sub>
 
 </div>
-📜 LICENSE
-
-This project is released under the MIT License.
-
-See LICENSE for details.
-
-<div align="center"> <img src="https://capsule-render.vercel.app/api?type=waving&height=140&section=footer&color=0:312e81,50:111827,100:050816&animation=fadeIn"/>
-⛓️ NEXCHAIN
-
-BUILD THE PROTOCOL. VERIFY THE STATE. EXTEND THE NETWORK.
-
-<br/>
-
-████████████████████████████████████████
-
-<br/>
-
-⭐ Star the repository if you want to follow the protocol's evolution.
-
-</div> ```
