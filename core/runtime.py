@@ -431,7 +431,7 @@ class NEXCHAINRuntime:
             "height": self.blockchain.height,
             "blocks": len(self.blockchain.chain),
             "validator": self.validator_address,
-            "mempool_transactions": self.mempool.size(),
+            "mempool_transactions": self.mempool.size,
             "state_root": self.state.state_root(),
             "blockchain": self.blockchain.stats(),
             "state": self.state.stats(),
